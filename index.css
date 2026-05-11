@@ -1,0 +1,119 @@
+@font-face {
+    font-family: myfont;
+    src: url(Greatvibes-Regular.ttf);
+}
+
+body {
+    background-image: linear-gradient(to right, pink, #eebee6);
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+    margin-top: 120px;
+}
+
+.container h1 {
+    color: rgb(252, 23, 149);
+    font-style: italic;
+    font-size: 70px;
+}
+
+.container h4 {
+    color: rgb(179, 12, 104);
+    font-size: 20px;
+}
+
+/* FORM */
+
+.form {
+    margin-top: 40px;
+}
+
+.form input {
+    width: 250px;
+    padding: 14px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    background-image: linear-gradient(rgb(255, 0, 212), rgb(238, 9, 181));
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* SPECIAL MESSAGE */
+
+.specialmessage {
+    display: none;
+    margin: 100px auto;
+    font-size: 22px;
+    padding: 40px;
+    background-color: #e28ec3;
+    color: yellow;
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.specialmessage h1 {
+    font-size: 50px;
+}
+
+.specialmessage h4 {
+    line-height: 1.8;
+}
+
+#yellow {
+    color: yellow;
+}
+
+/* FLOATING EFFECT */
+
+.hearts,
+.stars,
+.butterfly {
+    position: fixed;
+    top: -10vh;
+    font-size: 25px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+
+    to {
+        transform: translateY(120vh);
+    }
+
+}
+
+/* FOOTER */
+
+footer {
+    display: none;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 100px;
+}
